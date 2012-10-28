@@ -1,0 +1,29 @@
+1.+ Exceptions in RepositoryService.
+
+2. Copy MyProfile to a new email repository after new email properties defined.
+
+3. Do not test email properties before saving if they already were tested and not updated.
+
+4. Indicate that email connection has failed in RepositoryService - both in the notification area and 
+   in the application. Data exchange - via the file system.
+   
+5. Run the application after clicking the notification, remove the notification after this.
+
+6. Add an icon to the application title bar.
+
+7. Cache read/write synchronizing.
+
+8. Store IDs of the information messages in the cache with the indication if the message body is in the cache or
+   only in the email storage.
+   
+9. Send the message to the group in portions of the group members.
+
+10. Do not re-store the message if it is already received.
+
+11. Quota for the cache size and the number of the messages in the cache.
+
+12. Send messages further by other group members.
+
+13. Hierarchy of the folders for the information messages (is it not already done?).
+
+14.Search for the group's and the user's messages.

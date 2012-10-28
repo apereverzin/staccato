@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, StaccatoActivity!</string>
+    <string name="app_name">Staccato</string>
+    
+    <!-- buttons -->
+    <string name="save">Save</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="test">Test</string>
+    <string name="advanced">Advanced</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="view">View</string>
+    <string name="close">Close</string>
+    
+    <!-- Main menu -->
+    <string name="enter_email_account">Enter Email Account</string>
+    <string name="edit_email_account">Edit Email Account</string>
+    <string name="my_profile">My Profile</string>
+    <string name="groups">Groups</string>
+    <string name="profiles">Profiles</string>
+    <string name="receive_messages">Receive Messages</string>
+    <string name="help">Help</string>
+
+    <!-- Mail properties -->
+    <string name="mail_properties_activity_name">Email Properties</string>
+    <string name="mail_username">Email Address</string>
+    <string name="mail_password">Password</string>
+    <string name="mail_smtp">SMTP</string>
+    <string name="mail_smtp_host">SMTP Host</string>
+    <string name="mail_smtp_port">SMTP Port</string>
+    <string name="mail_smtp_auth">SMTP Auth</string>
+    <string name="mail_smtp_start_tls_enable">SMTP Start Tls Enable</string>
+    <string name="mail_smtp_socket_factory_port">SMTP Socket Factory Port</string>
+    <string name="mail_smtp_socket_factory_class">SMTP Socket Factory Class</string>
+    <string name="mail_imap_host">IMAP Host</string>
+    <string name="mail_imap_port">IMAP Port</string>
+
+    <!-- Profiles -->
+    <string name="profiles_activity_name">Profiles</string>
+    <string name="menu_profiles_view_messages">Messages</string>
+    <string name="menu_profiles_view_profile">View Profile</string>
+    <string name="menu_profiles_create_profile">Create Profile</string>
+    <string name="menu_profiles_update_profile">Update Profile</string>
+    <string name="menu_profiles_delete_profile">Delete Profile</string>
+
+    <!-- My profile -->
+    <string name="my_profile_activity_name">My Profile</string>
+
+    <!-- Profile -->
+    <string name="view_profile_activity_name">View Profile</string>
+
+    <string name="profile_email">Email</string>
+    <string name="profile_first_name">First Name</string>
+    <string name="profile_last_name">Last Name</string>
+    <string name="profile_nick_name">Nickname</string>
+    <string name="profile_comment">Comment</string>
+    <string name="profile_mobile_phone">Mobile Phone</string>
+
+    <!-- Groups -->
+    <string name="groups_activity_name">Groups</string>
+    <string name="menu_groups_view_profiles">Profiles</string>
+    <string name="menu_groups_view_messages">Messages</string>
+    <string name="menu_groups_create_group">Create Group</string>
+
+    <!-- Group -->
+    <string name="group_activity_name">Group</string>
+    <string name="group_name">Name</string>
+    <string name="group_description">Description</string>
+
+    <!-- Messages -->
+    <string name="messages_activity_name">Messages</string>
+
+    <!-- Message -->
+    <string name="message_activity_name">Message</string>
+    <string name="message_title">Title</string>
+    <string name="message_text">Text</string>
+
+    <string name="no_groups">No Groups</string>
+    <string name="no_profiles">No Profiles</string>
+    <string name="no_messages">No Messages</string>
+    
+    <!-- Notifications -->
+    <string name="notifications_staccato_messages">Staccato Messages</string>
+    <string name="notifications_staccato_messages_received">Staccato messages received</string>
+    
+    <!-- Check Email Result -->
+    <string name="check_email_result_title">Check Email</string>
+    <string name="check_email_result">Check Email:</string>
+    <string name="check_email_result_wait">Checking email. Please, wait...</string>
+    <string name="check_email_result_authentication_failed">Authentication failed</string>
+    <string name="check_email_result_connection_failed">Connection failed</string>
+    <string name="check_email_result_success">Success</string>
+    <string name="check_email_result_failure">Failure</string>
+    <string name="check_email_result_pending">Pending...</string>
+    
+    <!-- Error messages -->
+    <string name="error_message_authentication_failed">Authentication Failed</string>
+    <string name="error_message_connection_failed">Connection Failed</string>
+</resources>

@@ -1,0 +1,11 @@
+About my project: it is a kind of social network based on IMAP email servers; all data are stored in IMAP folders on the user's email account. There is a lot of duplication but at the same time it allows to avoid the central server - every user keeps his data on his own email account. Users can create groups and invite other users to join these groups, different membership policies (including voting) are available. Information messages can be sent to groups or to separate users. The data model (on Java) behind this is fully finished and can be included as a part of any Java based client application.
+
+The client program is now for Android, it provides the GUI part, the background process for monitoring the email account and the cache.
+
+This network is to connect people who can already be connected in the real life - directly or indirectly. A person can send the invitation to his/her friends to download the client application if necessary and to join a group (or groups). The only thing a friend has to do is to enter the details of his/her IMAP email account (IMAP is supported, for example, by gmail, yahoo, aol, ...).
+
+Not only information messages are distributed by the client application across the network - there are also service messages; if, for example, a new member joins or leaves a group - this becomes known (with help of service messages) to all members of that group.
+
+The data model is optimised to persist big number of group members and messages in the email account and get quick access to this information.
+
+Not using the central server in this network gives full independence to the members of the groups: neither whole network nor separate groups can be disabled by any authority.

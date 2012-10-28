@@ -1,0 +1,50 @@
+Distributed Social Network
+
+1. Introduction
+
+Ususally a social network stores the personal data and the messages of its members on its own servers. The members use Web browser as the client program and HTTP protocol as the media to connect to the social network and effectively to other members. From one side this restricts the requirements to the member's environment - only Web browser and Internet connection are necessary, everything else is provided by the social network; from the other side this enables the provider of the social network with the access to the personal data of all its members and their messages and also he can apply restrictive policies to them.
+
+The main idea behind Distributed Social Network - independence of the members of any particular provider. Beyond the client program which provides such usual functionality as sending and receiving messages to groups of members there is a personal data storage on the client side for service data and information messages. This means that the data is duplicated but at the same time nobody has access to the data in a centralized way and nobody can restrict the usage of the data by any particular user as soon as the user has already got access to that data.
+
+2. Structure
+
+The Distributed Social Network consists of groups, each of groups consists of group members. It is possible to a member of one group to belong to any number of other groups.
+
+Initially a person has to install the client application on his/her device and define the configuration parameters which define at least email address and the details of the personal storage.
+
+There are 3 ways to become a member of a group:
+
+1) to create a group and to invite new members by sending them a group invitation message
+2) to receive a group invitation message and to accept it
+3) to send a group membership request and which is to be accepted
+
+To be invited to a group a person needs:
+
+1) to have a valid email address
+2) to have a client program installed on a device with access to the Internet
+3) to have access to some personal data storage (the details of how to configura a personal data storage are described below)
+
+If you would like to invite a person who does not have the client application installed you need to send the Web link to the installation download.
+
+
+3. Actions
+- create own profile
+- create a group
+- send invitation to the group
+- accept/reject invitation
+- request group membership
+- vote group membership request
+- send information message
+
+
+4. Messages
+
+service messages
+information messages
+
+
+5. Components
+
+Client program
+Media (email)
+Personal storage

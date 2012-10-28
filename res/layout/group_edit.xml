@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" 
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content" 
+              android:text="@string/group_name" />
+    <EditText android:id="@+id/group_name" 
+              android:layout_width="fill_parent"
+              android:layout_height="40px"
+              android:scrollbars="vertical" />
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content" 
+              android:text="@string/group_description" />
+    <EditText android:id="@+id/group_description" 
+              android:layout_width="fill_parent"
+              android:layout_height="80px"
+              android:scrollbars="vertical" />
+        
+    <TableLayout android:layout_width="fill_parent"
+                 android:layout_height="wrap_content">
+        <TableRow android:layout_marginBottom="2dip" 
+                  android:gravity="bottom"
+                  android:layout_width="fill_parent">
+            <Button android:id="@+id/group_save" 
+                    android:layout_height="wrap_content" 
+                    android:text="@string/save" 
+                    android:layout_width="fill_parent" />
+            <Button android:id="@+id/group_cancel" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:text="@string/cancel" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
