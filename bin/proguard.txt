@@ -1,0 +1,42 @@
+# view AndroidManifest.xml #generated:17
+-keep class com.creek.staccato.android.activity.StaccatoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:26
+-keep class com.creek.staccato.android.activity.account.CheckEmailResultActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class com.creek.staccato.android.activity.account.EmailAccountEditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:27
+-keep class com.creek.staccato.android.activity.account.EmailAccountEditAdvancedActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:28
+-keep class com.creek.staccato.android.activity.group.GroupEditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:29
+-keep class com.creek.staccato.android.activity.group.GroupsListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:31
+-keep class com.creek.staccato.android.activity.message.MessageViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class com.creek.staccato.android.activity.message.MessagesListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:35
+-keep class com.creek.staccato.android.activity.profile.MyProfileActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:34
+-keep class com.creek.staccato.android.activity.profile.ProfileEditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:33
+-keep class com.creek.staccato.android.activity.profile.ProfileViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class com.creek.staccato.android.activity.profile.ProfilesListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:43
+-keep class com.creek.staccato.android.services.repositoryservice.RepositoryBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class com.creek.staccato.android.services.repositoryservice.RepositoryService { <init>(...); }
+

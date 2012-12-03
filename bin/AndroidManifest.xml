@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.creek.staccato.android.activity"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="7" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>    
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name="com.creek.staccato.android.activity.StaccatoActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.creek.staccato.android.activity.account.EmailAccountEditActivity" />
+        <activity android:name="com.creek.staccato.android.activity.account.CheckEmailResultActivity" />
+        <activity android:name="com.creek.staccato.android.activity.account.EmailAccountEditAdvancedActivity" />
+        <activity android:name="com.creek.staccato.android.activity.group.GroupEditActivity" />
+        <activity android:name="com.creek.staccato.android.activity.group.GroupsListActivity" />
+        <activity android:name="com.creek.staccato.android.activity.message.MessagesListActivity" />
+        <activity android:name="com.creek.staccato.android.activity.message.MessageViewActivity" />
+        <activity android:name="com.creek.staccato.android.activity.profile.ProfilesListActivity" />
+        <activity android:name="com.creek.staccato.android.activity.profile.ProfileViewActivity" />
+        <activity android:name="com.creek.staccato.android.activity.profile.ProfileEditActivity" />
+        <activity android:name="com.creek.staccato.android.activity.profile.MyProfileActivity" />
+
+        <service android:name="com.creek.staccato.android.services.repositoryservice.RepositoryService">
+            <intent-filter>
+                <action android:name="com.creek.staccato.android.services.repositoryservice.RepositoryService" />
+            </intent-filter>
+        </service>
+        
+        <receiver android:name="com.creek.staccato.android.services.repositoryservice.RepositoryBroadcastReceiver">
+            <intent-filter>
+                <action android:name ="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

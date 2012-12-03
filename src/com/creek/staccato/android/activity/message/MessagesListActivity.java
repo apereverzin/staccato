@@ -6,9 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import com.creek.staccato.android.ApplManager;
 import com.creek.staccato.android.activity.R;
-import com.creek.staccato.android.activity.account.EmailAccountEditActivity;
 import com.creek.staccato.android.activity.group.GroupsListActivity;
 import com.creek.staccato.android.activity.util.ActivityUtil;
 import com.creek.staccato.android.cache.CacheManager;

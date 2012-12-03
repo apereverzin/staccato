@@ -78,6 +78,7 @@ public final class ApplManager {
             messageService = new MessageServiceImpl();
             messageService.setMessageRepository(messageRepository);
             messageService.setInformationMessageRepository(informationMessageRepository);
+            messageService.setGroupRepository(groupRepository);
             messageService.setMessageCommunicator(communicator);
 
             groupService = new GroupServiceImpl();

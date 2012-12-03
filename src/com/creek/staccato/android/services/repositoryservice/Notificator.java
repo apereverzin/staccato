@@ -48,14 +48,18 @@ public class Notificator {
         int informationMessageCount = 0;
         int serviceMessageCount = 0;
         for(AddressedMessage message: messages) {
-            Log.d(TAG, "notifyMe: " + message.getClass().getName());
-            Log.d(TAG, "notifyMe: " + message.getMessageType());
+            Log.d(TAG, "------notifyMe: " + message.getClass().getName());
+            Log.d(TAG, "------notifyMe: " + message.getMessageType());
             if (message instanceof InformationMessage) {
-                ApplManager.getInstance().getMessageService().saveInformationMessage((InformationMessage)message);
+                Log.d(TAG, "------saving inf message");
+                try {
+                    ApplManager.getInstance().getMessageService().saveInfMessage((InformationMessage)message);
+                } catch(Throwable ex) {
+                	Log.d(TAG, "-----", ex);
+                }
+                Log.d(TAG, "------inf message saved");
                 informationMessageCount++;
-            }
-            
-            if (message instanceof LocationMessage || message instanceof GroupMembershipInvitationRequest || 
+            } else if (message instanceof LocationMessage || message instanceof GroupMembershipInvitationRequest || 
                     message instanceof GroupMembershipRequest || message instanceof GroupMembershipVoteRequest || 
                     message instanceof GroupOwnershipInvitationRequest || 
                     message instanceof GroupMembershipInvitationResponse || 
@@ -66,8 +70,8 @@ public class Notificator {
             }
         }
         
-        Log.d(TAG, "informationMessageCount: " + informationMessageCount);
-        Log.d(TAG, "serviceMessageCount: " + serviceMessageCount);
+        Log.d(TAG, "------informationMessageCount: " + informationMessageCount);
+        Log.d(TAG, "------serviceMessageCount: " + serviceMessageCount);
         if(informationMessageCount > 0 || serviceMessageCount > 0) {
             try {
                 displayNotification(repositoryService);
